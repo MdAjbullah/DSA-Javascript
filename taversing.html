@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do</title>
+</head>
+<body>
+    <input type="text" id="element">
+    <button onclick="getElement()">getelement</button>
+    
+</body>
+<script>
+    let data= [9,45,2,8,45,23,7,78,0,11,41,77];
+
+
+    function getElement(){
+        let element1=document.getElementById('element').value;
+        if(element1<data.length && typeof parseInt(element)=="number"){
+            
+            alert(data[element1]);
+        }else{
+            alert("please enter the valade input");
+
+        }
+
+     
+
+
+    }
+</script>
+</html>

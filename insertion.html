@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>insert element in array 
+     [60,30,3,9,10,50]  insert in -2nd position</p>
+     <input type="text" id="md">
+     <button onclick="mdb()"></button>
+    
+</body>
+<script>
+    
+   let data=[60,30,3,9,10,50];
+let newE1=90;
+let position=2;
+// console.log(data)
+for(let i= data.length-1; i>=0;i--){
+    // console.log(data[i])
+   if(i>=position){
+     data[i+1]=data[i];
+       if(i==position){
+        data[i]=newE1;
+       }
+    }
+
+}
+console.warn(data);
+
+
+</script>
+
+</html>
